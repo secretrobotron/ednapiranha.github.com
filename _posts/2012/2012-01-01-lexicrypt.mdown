@@ -7,7 +7,7 @@ summary: "During the summer, I entertained the idea of sending encrypted message
 
 During the summer, I entertained the idea of sending encrypted messages in publicly accessible images. I thought about a concept in which there was this wall of computer-generated images that everyone could see, but only few could discover and decrypt the messages hidden within the pixels.
 
-As a result, I created [Lexicrypt](https://github.com/ednapiranha/lexicrypt) to demo a proof-of-concept of encrypting and sharing messages to specified users.
+As a result, I created [Lexicrypt](http://lexicrypt.com) to demo a proof-of-concept of encrypting and sharing messages to specified users.
 
 Lexicrypt works in this way:
 
