@@ -1,0 +1,34 @@
+---
+title: "Lexicrypt: An Experiment with Cryptography and Steganography"
+layout: default
+categories: cryptography, steganography, python, aes
+summary: "During the summer, I entertained the idea of sending encrypted messages in publicly accessible images. I thought about a concept in which there was this wall of computer-generated images that everyone could see, but only few could discover and decrypt the messages hidden within the pixels."
+---
+
+During the summer, I entertained the idea of sending encrypted messages in publicly accessible images. I thought about a concept in which there was this wall of computer-generated images that everyone could see, but only few could discover and decrypt the messages hidden within the pixels.
+
+As a result, I created [Lexicrypt](https://github.com/ednapiranha/lexicrypt) to demo a proof-of-concept of encrypting and sharing messages to specified users.
+
+Lexicrypt works in this way:
+
+1. A user signs in with their email address to [BrowserID](http://browserid.org). After a successful login, they are assigned a unique token.
+2. The user creates a message and saving it auto-encrypts the content using AES. The resulting AES characters are mapped one-to-one to an RGB value.
+3. These mapped RGB values are saved to a PNG file and written to a server - the server URL is recorded as a reference point.
+4. The server URL is used to attach email addresses of those who can decrypt the secret message.
+5. If the user signs in with an email address that matches the one in the list the author has created, then they will have the ability to decrypt the message.
+
+The pros of this method include being able to generate a single image that can be shared to everyone without worrying about simplistic decryption methods in vanilla steganography like a [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_shift). Decrypting the pixels in this process will only result in the AES garbage text which is just as useful as plain AES garbage.
+
+A con of this method is the obvious server attack - if someone were to gain access to the server that Lexicrypt resides on, then they could find the AES secret and decrypt the messages.
+
+A possible solution to fix this weakness is to use [Public Key Encryption](http://en.wikipedia.org/wiki/Public-key_cryptography) - the only problem with this method is that the author's combined key with user Alice will have to generate an entirely different image from the one combined with user Bob. Therefore the same message will look different for everyone and the final process is not visually consistent.
+
+There are alternate solutions to resolve the best of both worlds - one of them that I have been thinking about is allowing the author to set a password for each (or all) of their messages. In this flow, the author's password can be saved as a one-way hash of the AES secret, specific to their image(s).
+
+Now even if the server is compromised, the one-way hash of their AES secret will add another layer of complexity for the intruder to decipher, since they will not be able to view it in plain text. This also allows for the images to stay visually consistent for both the users who can access the decrypted message and those who can only see the image.
+
+One flaw with this method is a usability one, where we now have the user managing passwords on all their messages - this adds a level of complexity to the flow of trying to send a message, have it encrypted, keep it visually consistent and add/remove email addresses with ease.
+
+There are many interesting solutions and possibilities on how to solve and improve the logic of how Lexicrypt encrypts and stores content. I'd be interested in hearing what others think and what we can do to improve a seamless experience of shared encryption and creative results.
+
+To follow and/or help with the project, feel free to check it out on [Github](https://github.com/ednapiranha/lexicrypt)

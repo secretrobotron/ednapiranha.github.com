@@ -1,0 +1,20 @@
+{% assign content = post.summary %}
+
+<div class="content">
+  <div class="page-header">
+    {% if post.title %}
+      <h3 class="title">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h3>
+    {% endif %}
+  </div>
+  <div class="post-content">
+    <p class="date">{{ post.date | date:'%B %d, %Y' }}</p>
+    <p>{{ content }}</p>
+    <div class="categories">
+      {% for category in post.categories %}
+        <span>{{ category }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</div>

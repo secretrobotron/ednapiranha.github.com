@@ -1,0 +1,4 @@
+auto: true
+paginate: 3
+permalink: /:year/:title/
+name: Edna Piranha
