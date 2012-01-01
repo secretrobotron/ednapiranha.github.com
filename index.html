@@ -4,11 +4,9 @@ is_index: true
 ---
 
 {% include header.html %}
-
 <img src="landing.jpg" width="100%">
 
 <h2>Recent Posts</h2>
-
 {% for post in paginator.posts limit:3 %}
   {% include post_preview.html %}
 {% endfor %}
