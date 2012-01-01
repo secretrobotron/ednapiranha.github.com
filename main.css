@@ -92,10 +92,6 @@ h1, h2, h3, h4 {
     padding-bottom: 15px;
 }
 
-.home {
-    padding-bottom: 0px;
-}
-
 .home .title {
     border-bottom: 0px;
     font-size: 1.5em;
