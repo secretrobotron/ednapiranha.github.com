@@ -9,5 +9,5 @@
   </head>
   <body>
     <div class="wrapper{% if page.is_index %} home{% endif %}">
-      <a href="{{ site.baseurl }}/" id="home">Home</a>
-      <a href="{{ site.baseurl }}/about.html" id="about">About</a>
+      <a href="{{ site.baseurl }}/" id="home" class="top-link{% if page.is_index %} active{% endif %}">Home</a>
+      <a href="{{ site.baseurl }}/about.html" id="about" class="top-link{% if page.page == 'about' %} active{% endif %}">About</a>

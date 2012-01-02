@@ -62,11 +62,13 @@ body {
 
 p, li, a, span {
     color: #666;
-    font-size: 0.85em;
+    font-size: 0.87em;
     line-height: 1.35em;
 }
 
-#home, #about {
+.top-link {
+    background-color: #eee;
+    color: #666;
     display: block;
     font-family: Arial;
     font-size: 0.7em;
@@ -76,14 +78,12 @@ p, li, a, span {
     top: 0px;
 }
 
-#home {
+.active {
     background-color: #f00;
     color: #f1f1f1;
 }
 
 #about {
-    background-color: #eee;
-    color: #666;
     left: 80px;
 }
 
