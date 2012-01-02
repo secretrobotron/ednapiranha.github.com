@@ -66,9 +66,7 @@ p, li, a, span {
     line-height: 1.35em;
 }
 
-#home {
-    background-color: #f00;
-    color: #eee;
+#home, #about {
     display: block;
     font-family: Arial;
     font-size: 0.7em;
@@ -76,6 +74,17 @@ p, li, a, span {
     position: absolute;
     text-transform: uppercase;
     top: 0px;
+}
+
+#home {
+    background-color: #f00;
+    color: #eee;
+}
+
+#about {
+    background-color: #eee;
+    color: #666;
+    left: 80px;
 }
 
 h1, h2, h3, h4 {
@@ -171,7 +180,7 @@ a {
 
 .footer li a {
     color: #767676;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: normal;
     padding: 0px 3px 0px 3px;
 }
