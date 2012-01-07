@@ -1,7 +1,7 @@
 ---
 title: "Lexicrypt: An Experiment with Cryptography and Steganography"
 layout: default
-categories: cryptography, steganography, python, aes
+categories: cryptography, steganography, python, aes, lexicrypt
 summary: "During the summer, I entertained the idea of sending encrypted messages in publicly accessible images. I thought about a concept in which there was this wall of computer-generated images that everyone could see, but only few could discover and decrypt the messages hidden within the pixels."
 ---
 

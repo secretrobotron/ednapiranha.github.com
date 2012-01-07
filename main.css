@@ -101,6 +101,14 @@ h1, h2, h3, h4 {
     padding-bottom: 15px;
 }
 
+.content.preview {
+    margin-bottom: 50px;
+}
+
+.content.preview:last-child {
+    margin-bottom: 0px;
+}
+
 .home .title {
     border-bottom: 0px;
     font-size: 1.5em;

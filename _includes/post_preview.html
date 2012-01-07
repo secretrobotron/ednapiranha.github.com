@@ -1,6 +1,6 @@
 {% assign content = post.summary %}
 
-<div class="content">
+<div class="content preview">
   <div class="page-header">
     {% if post.title %}
       <h3 class="title">
@@ -11,10 +11,5 @@
   <div class="post-content">
     <p class="date">{{ post.date | date:'%B %d, %Y' }}</p>
     <p>{{ content }} <a href="{{ site.baseurl }}{{ post.url }}" class="more">Read more</a></p>
-    <div class="categories">
-      {% for category in post.categories %}
-        <span>{{ category }}</span>
-      {% endfor %}
-    </div>
   </div>
 </div>
