@@ -130,6 +130,10 @@ h1, h2, h3, h4 {
     padding: 0px 3px 0px 3px;
 }
 
+.post-content img {
+    margin-bottom: 20px;
+}
+
 p {
     margin-bottom: 18px;
 }
