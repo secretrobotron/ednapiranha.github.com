@@ -31,4 +31,6 @@ One flaw with this method is a usability one, where we now have the user managin
 
 There are many interesting solutions and possibilities on how to solve and improve the logic of how Lexicrypt encrypts and stores content. I'd be interested in hearing what others think and what we can do to improve a seamless experience of shared encryption and creative results.
 
+Note: The steganographic portion is not activated and therefore it is currently just cryptography -> encoding in images. As the project progresses, I will be implementing a branch for that, so don't get to up in a huff about the details yet.
+
 To follow and/or help with the project, feel free to check it out on [Github](https://github.com/ednapiranha/lexicrypt)
