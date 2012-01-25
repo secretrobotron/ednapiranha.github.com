@@ -210,3 +210,21 @@ a {
     float: right;
     padding: 20px;
 }
+
+body.road {
+    background-color: #191919;
+    background-image: url('road.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body.road .wrapper {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+body.road .wrapper h1 {
+    color: #fff;
+    font-size: 200%;
+}

@@ -1,7 +1,7 @@
 ---
-title: "Lexicrypt: An Experiment with Cryptography and Steganography"
+title: "Lexicrypt: An Experiment with Cryptography"
 layout: default
-categories: cryptography, steganography, python, aes, lexicrypt
+categories: cryptography, python, aes, lexicrypt
 summary: "During the summer, I entertained the idea of sending encrypted messages in publicly accessible images. I thought about a concept in which there was this wall of computer-generated images that everyone could see, but only few could discover and decrypt the messages hidden within the pixels."
 ---
 
@@ -17,7 +17,7 @@ Lexicrypt works in this way:
 4. The server URL is used to attach email addresses of those who can decrypt the secret message.
 5. If the user signs in with an email address that matches the one in the list the author has created, then they will have the ability to decrypt the message.
 
-The pros of this method include being able to generate a single image that can be shared to everyone without worrying about simplistic decryption methods in vanilla steganography like a [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_shift). Decrypting the pixels in this process will only result in the AES garbage text which is just as useful as plain AES garbage.
+The pros of this method include being able to generate a single image that can be shared to everyone without worrying about simplistic decryption methods like a [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_shift). Decrypting the pixels in this process will only result in the AES garbage text which is just as useful as plain AES garbage.
 
 A con of this method is the obvious server attack - if someone were to gain access to the server that Lexicrypt resides on, then they could find the AES secret and decrypt the messages.
 
@@ -30,7 +30,5 @@ Now even if the server is compromised, the one-way hash of their AES secret will
 One flaw with this method is a usability one, where we now have the user managing passwords on all their messages - this adds a level of complexity to the flow of trying to send a message, have it encrypted, keep it visually consistent and add/remove email addresses with ease.
 
 There are many interesting solutions and possibilities on how to solve and improve the logic of how Lexicrypt encrypts and stores content. I'd be interested in hearing what others think and what we can do to improve a seamless experience of shared encryption and creative results.
-
-Note: The steganographic portion is not activated and therefore it is currently just cryptography -> encoding in images. As the project progresses, I will be implementing a branch for that, so don't get to up in a huff about the details yet.
 
 To follow and/or help with the project, feel free to check it out on [Github](https://github.com/ednapiranha/lexicrypt)
