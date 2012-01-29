@@ -1,0 +1,16 @@
+---
+title: "Space Videos"
+layout: default
+categories: space, cassini, sun
+summary: "Beautiful videos. Don't let anyone tell you otherwise."
+---
+
+Beautiful videos. Don't let anyone tell you otherwise.
+
+Play them simultaneously for full effect.
+
+<iframe src="http://player.vimeo.com/video/1284717?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="302" frameborder="0">brilliant noise</iframe>
+
+<iframe src="http://player.vimeo.com/video/3921306?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="220" frameborder="0">black rain</iframe>
+
+<iframe src="http://player.vimeo.com/video/24410924?title=0&amp;byline=0&amp;portrait=0" width="100%" height="225" frameborder="0">cassini mission</iframe>
