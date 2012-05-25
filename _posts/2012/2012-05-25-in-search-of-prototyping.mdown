@@ -11,9 +11,10 @@ That's a lot of things to think about - but there is also a lot lacking in the s
 let's say I am a person who needs to build concepts quickly to test out product ideas but I may only know a little bit of code,
 a little bit about Photoshop and a little bit about wireframing. What are my options?
 
-I could go full-on learning about programming, from outputting 'hello world' in some arbitrary scripting language to building
-an entire CRUD system and then take another century to learn someone's proprietary IDE that apparently increases my productivity
-in building apps. Does something like this make sense for me?
+I could learn about programming from outputting 'hello world' in some arbitrary scripting language to building
+an entire [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) system and then take some unknown amount of time
+to learn someone's proprietary IDE that hopefully increases my productivity in building apps. Does something like this make
+sense for me?
 
 <img src="/images/sencha.jpg" width="100%">
 
