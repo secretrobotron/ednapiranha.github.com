@@ -43,5 +43,5 @@ What if we could combine elements of all of these examples and make it web-based
 terms of optimizing workflow from product to development to production?
 
 These are the questions I want to investigate so that we can make a tool that helps people build functioning prototypes and remove the
-ambigiuity that occurs during planning, sketching and iteration.
+ambiguity that occurs during planning, sketching and iteration.
 
