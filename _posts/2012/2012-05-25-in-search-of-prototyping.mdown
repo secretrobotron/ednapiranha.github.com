@@ -1,0 +1,46 @@
+---
+title: "In Search of Prototyping"
+layout: default
+categories: prototyping, software, ux, javascript, development
+summary: "I've been thinking about prototyping. And web applications. And applications that aren't IDEs. And open web."
+---
+
+I've been thinking about prototyping. And web applications. And applications that aren't IDEs. And open web.
+
+That's a lot of things to think about - but there is also a lot lacking in the solutions we are currently given. For instance,
+let's say I am a person who needs to build concepts quickly to test out product ideas but I may only know a little bit of code,
+a little bit about Photoshop and a little bit about wireframing. What are my options?
+
+I could go full-on learning about programming, from outputting 'hello world' in some arbitrary scripting language to building
+an entire CRUD system and then take another century to learn someone's proprietary IDE that apparently increases my productivity
+in building apps. Does something like this make sense for me?
+
+<img src="/images/sencha.jpg" width="100%">
+
+The interface is just too confusing and complicated to get anything done right away. Sure, I could read all the documentation,
+search around online for various tutorials and sources - but then I would just be cornering myself as a potential specialist in
+this proprietary software. Let's try something else.
+
+I just want to drag and drop things - and have it generally look as expected immediately. I don't want to read all this text about
+how to use it. I just want to use it. How about something like this?
+
+<img src="/images/balsamiq.jpg" width="100%">
+
+Ahh, this interface is so much nicer to work with. There is one unfortunate thing - there is no actual working code in the back. This
+is literally a mockup - a ghost of a Photoshop file with all the common web-elements we know and love but lacking the design.
+This is done on purpose to keep the user from treating it as the real thing, but is this good enough? What if we could have the best
+of both worlds - prototype-like user execution that actually works with real code without having to write all that code or read
+mountains of documentation on how the system works?
+
+Let's look at OSX's Automator for some clues on how we can bridge the gap:
+
+<img src="/images/automator.jpg" width="100%">
+
+Here we have something that you can drag and drop, is easy to understand AND actually generates some functionality.
+
+What if we could combine elements of all of these examples and make it web-based, open source and easy to use? What would it mean in
+terms of optimizing workflow from product to development to production?
+
+These are the questions I want to investigate so that we can make a tool that helps people build functioning prototypes and remove the
+ambigiuity that occurs during planning, sketching and iteration.
+
