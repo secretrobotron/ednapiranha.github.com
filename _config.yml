@@ -1,4 +1,5 @@
 auto: true
 paginate: 3
 permalink: /:year/:title/
+url: http://ednapiranha.com
 name: Edna Piranha
