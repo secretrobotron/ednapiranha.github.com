@@ -1,0 +1,56 @@
+---
+title: "An RPG of Noodle Portions"
+layout: default
+categories: software, games, javascript, development
+summary: "So I decided to start working on a cheapie web RPG again."
+---
+
+## The History
+
+So I decided to start working on a cheapie web RPG again.
+
+The first time I tried this, it was a game I called 'Cats and Potatoes' and it was built with Ruby on Rails. It was more ghetto than this one but not by much.
+
+These are the old screenshots from Cats and Potatoes:
+
+<img src="http://dl.dropbox.com/u/1913694/blog/catspotatoes1.jpg" width="100%">
+
+<img src="http://dl.dropbox.com/u/1913694/blog/catspotatoes2.jpg" width="100%">
+
+<img src="http://dl.dropbox.com/u/1913694/blog/catspotatoes3.jpg" width="100%">
+
+Heavily influenced by [Kingdom of Loathing](http://kingdomofloathing.com), I wanted to create a really silly web RPG where you just had to submit forms the old school way and roll the dice on battles.
+
+Well that was going all fine and dandy because it was really easy to make the game logic but creating and managing content really drained my soul. I focused too much on finding photography that had the correct Creative Commons copyright and most of it sucked so my motivation slowly died.
+
+To add to the complexity and slog, I did not have a drawing tablet so I was drawing these damned characters with my mouse. It was the worst.
+
+## The Present
+
+Fast forward to 2012, I've weaned myself off of Rails (that sounds almost illegal) and have been working a lot with Node/Express. All Javascript. All the time.
+
+I regret never finishing Cats and Potatoes and don't have the source code anymore (don't ask - long, tragic story) and I am on to new and better things. Things involving space, 2001 references, planets, science fiction.
+
+So I've started work on a new ghetto web RPG. It is called NoodleRPG (for now). I think the general story is that you are some sort of humanoid that flies around space and visits planets and moons. Then you fight random unrealistic enemies - like an angry star. Or a tapeworm that looks like a dried piece of poo that was hollowed out.
+
+<img src="http://dl.dropbox.com/u/1913694/blog/noodlerpg1.jpg" width="100%">
+
+<img src="http://dl.dropbox.com/u/1913694/blog/noodlerpg2.jpg" width="100%">
+
+<img src="http://dl.dropbox.com/u/1913694/blog/noodlerpg3.jpg" width="100%">
+
+(And of course, the hollowed out poo worm)
+
+<img src="http://dl.dropbox.com/u/1913694/blog/noodlerpg4.jpg" width="100%">
+
+## The Mechanics
+
+So how does it work? The current battle code is under 84 lines and all the content and configurations are generated through static json files. Things like content graphics, battle low and high values, battle copy are all located in these json files and the only thing saved to the database are the user stats in Redis.
+
+And that's it. Nothing super complicated, nothing fancy.
+
+## The Source
+
+So that's what I've been up to lately - it should be a just another week or two before I will release a test version of the game on a server.
+
+If you would like to see the ongoing code changes or fork a version of your own to play with (sounds R-rated) check out the [source on Github](https://github.com/ednapiranha/noodlerpg).
