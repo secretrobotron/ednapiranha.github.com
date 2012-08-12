@@ -1,0 +1,24 @@
+---
+title: "NoodleRPG is in the public!"
+layout: default
+categories: software, games, javascript, development
+summary: "It has launched!"
+---
+
+## Wooo!
+
+![Sandy the poo worm](https://dl.dropbox.com/u/1913694/blog/sandy-alive.png)
+
+It has [launched](http://rpg.noodletalk.org)!
+
+I forced myself to finish up the game to include a final boss and now it's more or less done!
+
+Although it was a bit of a trek, the hard part is complete and now I can start adding all the little fun things.
+
+I've added ascension support so that when you kill the boss you can start new jobs and carry over your previous gold.
+
+To simplify extra health purchases, refueling is now located at various pharmacy outlets on certain levels. If you have less than 100 health, a message will pop up to let you know where to find this pharmacy.
+
+There may be some bugs that I have not yet encountered, so if you do find any, please report them here: [https://github.com/ednapiranha/noodlerpg/issues](https://github.com/ednapiranha/noodlerpg/issues).
+
+As more things are added, I'll consider creating some sort of game wiki so that it isn't a complete mystery how everything operates :)
