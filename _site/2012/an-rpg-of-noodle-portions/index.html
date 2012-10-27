@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>edna piranha</title>
+    <meta content="width=device-width, height=device-height, user-scalable=no, initial-scale=0.95, maximum-scale=0.95, minimum-scale=0.95" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    <link type="text/css" rel="stylesheet" href="/main.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4319539-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="/" id="home" class="top-link">Home</a>
+      <a href="/about.html" id="about" class="top-link">About</a>
+
+<div class="content">
+  <div class="page-header">
+    
+      <h3 class="title">An RPG of Noodle Portions</h3>
+    
+  </div>
+  <div class="post-content">
+    <h2 id='the_history'>The History</h2>
+
+<p>So I decided to start working on a cheapie web RPG again.</p>
+
+<p>The first time I tried this, it was a game I called &#8216;Cats and Potatoes&#8217; and it was built with Ruby on Rails. It was more ghetto than this one but not by much.</p>
+
+<p>These are the old screenshots from Cats and Potatoes:</p>
+<img src='http://dl.dropbox.com/u/1913694/blog/catspotatoes1.jpg' width='100%' /><img src='http://dl.dropbox.com/u/1913694/blog/catspotatoes2.jpg' width='100%' /><img src='http://dl.dropbox.com/u/1913694/blog/catspotatoes3.jpg' width='100%' />
+<p>Heavily influenced by <a href='http://kingdomofloathing.com'>Kingdom of Loathing</a>, I wanted to create a really silly web RPG where you just had to submit forms the old school way and roll the dice on battles.</p>
+
+<p>Well that was going all fine and dandy because it was really easy to make the game logic but creating and managing content really drained my soul. I focused too much on finding photography that had the correct Creative Commons copyright and most of it sucked so my motivation slowly died.</p>
+
+<p>To add to the complexity and slog, I did not have a drawing tablet so I was drawing these damned characters with my mouse. It was the worst.</p>
+
+<h2 id='the_present'>The Present</h2>
+
+<p>Fast forward to 2012, I&#8217;ve weaned myself off of Rails (that sounds almost illegal) and have been working a lot with Node/Express. All Javascript. All the time.</p>
+
+<p>I regret never finishing Cats and Potatoes and don&#8217;t have the source code anymore (don&#8217;t ask - long, tragic story) and I am on to new and better things. Things involving space, 2001 references, planets, science fiction.</p>
+
+<p>So I&#8217;ve started work on a new ghetto web RPG. It is called NoodleRPG (for now). I think the general story is that you are some sort of humanoid that flies around space and visits planets and moons. Then you fight random unrealistic enemies - like an angry star. Or a tapeworm that looks like a dried piece of poo that was hollowed out.</p>
+<img src='http://dl.dropbox.com/u/1913694/blog/noodlerpg1.jpg' width='100%' /><img src='http://dl.dropbox.com/u/1913694/blog/noodlerpg2.jpg' width='100%' /><img src='http://dl.dropbox.com/u/1913694/blog/noodlerpg3.jpg' width='100%' />
+<p>(And of course, the hollowed out poo worm)</p>
+<img src='http://dl.dropbox.com/u/1913694/blog/noodlerpg4.jpg' width='100%' />
+<h2 id='the_mechanics'>The Mechanics</h2>
+
+<p>So how does it work? The current battle code is under 84 lines and all the content and configurations are generated through static json files. Things like content graphics, battle low and high values, battle copy are all located in these json files and the only thing saved to the database are the user stats in Redis.</p>
+
+<p>And that&#8217;s it. Nothing super complicated, nothing fancy.</p>
+
+<h2 id='the_source'>The Source</h2>
+
+<p>So that&#8217;s what I&#8217;ve been up to lately - it should be a just another week or two before I will release a test version of the game on a server.</p>
+
+<p>If you would like to see the ongoing code changes or fork a version of your own to play with (sounds R-rated) check out the <a href='https://github.com/ednapiranha/noodlerpg'>source on Github</a>.</p>
+  </div>
+  <p class="date">July 26, 2012</p>
+</div>
+
+<div class="categories">
+  
+    <span>software,</span>
+  
+    <span>games,</span>
+  
+    <span>javascript,</span>
+  
+    <span>development</span>
+  
+</div>
+
+    </div>
+    <div class="footer">
+      <div class="footer-wrapper">
+        <ul>
+          <li><h2>Projects</h2></li>
+          <li><a href="http://rpg.noodletalk.org">NoodleRPG</a></li>
+          <li><a href="http://noodletalk.org">Noodle Talk</a></li>
+          <li><a href="http://greatbrain.heroku.com">The Great Brain</a></li>
+          <li><a href="http://thenonsequitur.org">The Non Sequitur</a></li>
+          <li><a href="http://paperweb.me">Paperweb</a></li>
+        </ul>
+        <ul>
+          <li><h2>Code</h2></li>
+          <li><a href="https://github.com/ednapiranha/noodlerpg">NoodleRPG</a></li>
+          <li><a href="https://github.com/ednapiranha/specim.in">Specim.in</a></li>
+          <li><a href="https://github.com/ednapiranha/herbie">Herbie</a></li>
+          <li><a href="https://github.com/ednapiranha/noodletalk">Noodle Talk</a></li>
+          <li><a href="https://github.com/ednapiranha/web_imagery">Web Imagery</a></li>
+          <li><a href="https://github.com/ednapiranha/auto-tagify">Auto Tagify</a></li>
+          <li><a href="https://github.com/ednapiranha/tapechat">Tapechat</a></li>
+        </ul>
+        <ul>
+          <li><h2>Other</h2></li>
+          <li><a href="http://776868973.com">776868973</a></li>
+          <li><a href="http://pinboard.in/u:ednapiranha">Pinboard</a></li>
+          <li><a href="http://twitter.com/ednapiranha">Twitter</a></li>
+          <li><a href="http://www.mixcloud.com/lazykiki">Podcasts</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+

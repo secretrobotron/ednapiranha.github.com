@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>edna piranha</title>
+    <meta content="width=device-width, height=device-height, user-scalable=no, initial-scale=0.95, maximum-scale=0.95, minimum-scale=0.95" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    <link type="text/css" rel="stylesheet" href="/main.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4319539-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="/" id="home" class="top-link">Home</a>
+      <a href="/about.html" id="about" class="top-link">About</a>
+
+<div class="content">
+  <div class="page-header">
+    
+      <h3 class="title">Lexicrypt: An Experiment with Cryptography</h3>
+    
+  </div>
+  <div class="post-content">
+    <p>During the summer, I entertained the idea of sending encrypted messages in publicly accessible images. I thought about a concept in which there was this wall of computer-generated images that everyone could see, but only few could discover and decrypt the messages hidden within the pixels.</p>
+
+<p>As a result, I created <a href='http://lexicrypt.com'>Lexicrypt</a> to demo a proof-of-concept of encrypting and sharing messages to specified users.</p>
+
+<p>Lexicrypt works in this way:</p>
+
+<ol>
+<li>A user signs in with their email address to <a href='http://browserid.org'>BrowserID</a>. After a successful login, they are assigned a unique token.</li>
+
+<li>The user creates a message and saving it auto-encrypts the content using AES. The resulting AES characters are mapped one-to-one to an RGB value.</li>
+
+<li>These mapped RGB values are saved to a PNG file and written to a server - the server URL is recorded as a reference point.</li>
+
+<li>The server URL is used to attach email addresses of those who can decrypt the secret message.</li>
+
+<li>If the user signs in with an email address that matches the one in the list the author has created, then they will have the ability to decrypt the message.</li>
+</ol>
+
+<p>The pros of this method include being able to generate a single image that can be shared to everyone without worrying about simplistic decryption methods like a <a href='http://en.wikipedia.org/wiki/Caesar_shift'>Caesar cipher</a>. Decrypting the pixels in this process will only result in the AES garbage text which is just as useful as plain AES garbage.</p>
+
+<p>A con of this method is the obvious server attack - if someone were to gain access to the server that Lexicrypt resides on, then they could find the AES secret and decrypt the messages.</p>
+
+<p>A possible solution to fix this weakness is to use <a href='http://en.wikipedia.org/wiki/Public-key_cryptography'>Public Key Encryption</a> - the only problem with this method is that the author&#8217;s combined key with user Alice will have to generate an entirely different image from the one combined with user Bob. Therefore the same message will look different for everyone and the final process is not visually consistent.</p>
+
+<p>There are alternate solutions to resolve the best of both worlds - one of them that I have been thinking about is allowing the author to set a password for each (or all) of their messages. In this flow, the author&#8217;s password can be saved as a one-way hash of the AES secret, specific to their image(s).</p>
+
+<p>Now even if the server is compromised, the one-way hash of their AES secret will add another layer of complexity for the intruder to decipher, since they will not be able to view it in plain text. This also allows for the images to stay visually consistent for both the users who can access the decrypted message and those who can only see the image.</p>
+
+<p>One flaw with this method is a usability one, where we now have the user managing passwords on all their messages - this adds a level of complexity to the flow of trying to send a message, have it encrypted, keep it visually consistent and add/remove email addresses with ease.</p>
+
+<p>There are many interesting solutions and possibilities on how to solve and improve the logic of how Lexicrypt encrypts and stores content. I&#8217;d be interested in hearing what others think and what we can do to improve a seamless experience of shared encryption and creative results.</p>
+
+<p>To follow and/or help with the project, feel free to check it out on <a href='https://github.com/ednapiranha/lexicrypt'>Github</a></p>
+  </div>
+  <p class="date">January 01, 2012</p>
+</div>
+
+<div class="categories">
+  
+    <span>cryptography,</span>
+  
+    <span>python,</span>
+  
+    <span>aes,</span>
+  
+    <span>lexicrypt</span>
+  
+</div>
+
+    </div>
+    <div class="footer">
+      <div class="footer-wrapper">
+        <ul>
+          <li><h2>Projects</h2></li>
+          <li><a href="http://rpg.noodletalk.org">NoodleRPG</a></li>
+          <li><a href="http://noodletalk.org">Noodle Talk</a></li>
+          <li><a href="http://greatbrain.heroku.com">The Great Brain</a></li>
+          <li><a href="http://thenonsequitur.org">The Non Sequitur</a></li>
+          <li><a href="http://paperweb.me">Paperweb</a></li>
+        </ul>
+        <ul>
+          <li><h2>Code</h2></li>
+          <li><a href="https://github.com/ednapiranha/noodlerpg">NoodleRPG</a></li>
+          <li><a href="https://github.com/ednapiranha/specim.in">Specim.in</a></li>
+          <li><a href="https://github.com/ednapiranha/herbie">Herbie</a></li>
+          <li><a href="https://github.com/ednapiranha/noodletalk">Noodle Talk</a></li>
+          <li><a href="https://github.com/ednapiranha/web_imagery">Web Imagery</a></li>
+          <li><a href="https://github.com/ednapiranha/auto-tagify">Auto Tagify</a></li>
+          <li><a href="https://github.com/ednapiranha/tapechat">Tapechat</a></li>
+        </ul>
+        <ul>
+          <li><h2>Other</h2></li>
+          <li><a href="http://776868973.com">776868973</a></li>
+          <li><a href="http://pinboard.in/u:ednapiranha">Pinboard</a></li>
+          <li><a href="http://twitter.com/ednapiranha">Twitter</a></li>
+          <li><a href="http://www.mixcloud.com/lazykiki">Podcasts</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+

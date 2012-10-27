@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Edna Piranha</title>
+    <description></description>
+    <link>http://ednapiranha.com</link>
+    
+      <item>
+        <title>NoodleRPG is in the public!</title>
+        <description>It has launched!</description>
+        <published>2012-08-12 00:00:00 -0400</published>
+        <link>http://ednapiranha.com/2012/noodlerpg-is-in-the-public/</link>
+      </item>
+    
+      <item>
+        <title>An RPG of Noodle Portions</title>
+        <description>So I decided to start working on a cheapie web RPG again.</description>
+        <published>2012-07-26 00:00:00 -0400</published>
+        <link>http://ednapiranha.com/2012/an-rpg-of-noodle-portions/</link>
+      </item>
+    
+      <item>
+        <title>In Search of Prototyping</title>
+        <description>I've been thinking about prototyping. And web applications. And applications that aren't IDEs. And open web.</description>
+        <published>2012-05-25 00:00:00 -0400</published>
+        <link>http://ednapiranha.com/2012/in-search-of-prototyping/</link>
+      </item>
+    
+  </channel>
+</rss>
