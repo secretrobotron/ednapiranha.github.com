@@ -1,5 +1,9 @@
+safe: true
 auto: true
 paginate: 3
 permalink: /:year/:title/
+build: _site
 url: http://ednapiranha.com
 name: Edna Piranha
+lsi: false
+pygments: true
