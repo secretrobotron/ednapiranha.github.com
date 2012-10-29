@@ -27,9 +27,9 @@ This means when we resize on the fly, all media must also resize without a scree
 
 It's really tempting to add everything we can to make a full service client - because that's what people want, right? No, people don't really want that. Honestly. People want to have a great experience in the application they are using but this doesn't necessarily equate to adding more features.
 
-Adding too many features will limit your ability as a developer/designer/producer to focus on what makes your app unique and interesting. It bogs your code down and makes it difficult to maintain when you want to move things around - even writing tests that have 100% test coverage won't save you from the inevitable problem of usability problems.
+Adding too many features will limit your ability as a developer/designer/producer to focus on what makes your app unique and interesting. It bogs your code down and makes it difficult to maintain when you want to move things around - even writing tests that have 100% coverage won't save you from the inevitable problems in usability.
 
-As a result, even though NoodleApp isn't the most perfect web client in the universe, we mindfully listen to what people want in terms of feature requests, look at the current application state and constantly trim and polish accordingly.
+Even though NoodleApp isn't the most perfect web client in the universe, we mindfully listen to what people want in terms of feature requests, look at the current application state and constantly trim and polish accordingly.
 
 If something will make 80% of people happy then it has a higher priority for being implemented - but if it creates a high risk environment of "we really don't know how people will react to this once it goes live", it is held off until we cater to more pressing issues (like bug fixes and making the current interface fast, usable and pleasant).
 
