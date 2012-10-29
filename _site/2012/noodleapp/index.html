@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>edna piranha</title>
+    <meta content="width=device-width, height=device-height, user-scalable=no, initial-scale=0.95, maximum-scale=0.95, minimum-scale=0.95" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    <link type="text/css" rel="stylesheet" href="/main.css">
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4319539-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="/" id="home" class="top-link">Home</a>
+      <a href="/about.html" id="about" class="top-link">About</a>
+
+<div class="content">
+  <div class="page-header">
+    
+      <h3 class="title">NoodleApp</h3>
+    
+  </div>
+  <div class="post-content">
+    <h2 id='lets_just_say_twitter_is_not_on_my_radar_anymore'>Let&#8217;s just say Twitter is not on my radar (anymore)</h2>
+
+<p>I am still on <a href='http://twitter.com/ednapiranha'>Twitter</a>, I am just choosing to ignore it for as long as I can these days. There are many reasons why (and that&#8217;s probably left for another blog post), but the whole death of the developer ecosystem that brought them where they are today is part of it. But I digress. Let&#8217;s talk about something more interesting.</p>
+
+<h2 id='making_an_appnet_web_client'>Making an App.net web client</h2>
+
+<p>So one weekend a little over a month ago, I created an <a href='http://alpha.app.net'>App.net</a> client. Since I already made <a href='http://noodletalk.org'>Noodletalk</a> (a realtime chat with support for embedded media), I decided to port the core media functionality to this new client.</p>
+
+<p>Well that was a pretty fun weekend hack! The result was something like this:</p>
+
+<p><img alt='NoodleApp v1' src='https://dl.dropbox.com/u/1913694/blog/noodleApp-v1.jpg' /></p>
+
+<h2 id='challenge_1_make_it_work_in_all_devices'>Challenge #1: Make it work in all devices</h2>
+
+<p>NoodleApp was built from the ground up with responsive design first. Although limited to two possible sizes (325 pixels wide and 610 pixels), it ensures a reasonable experience in desktop, tablet and mobile views in modern web browsers.</p>
+
+<p>This means when we resize on the fly, all media must also resize without a screen refresh and still work. But it also means not making the content too wide and ruining readability (ideal maximum reading length of text on a page should be around 12 words or 50-60 characters including whitespace).</p>
+
+<h2 id='challenge_2_add_as_much_functionality_available_in_the_appnet_api_within_reason'>Challenge #2: Add as much functionality available in the app.net API (within reason)</h2>
+
+<p>It&#8217;s really tempting to add everything we can to make a full service client - because that&#8217;s what people want, right? No, people don&#8217;t really want that. Honestly. People want to have a great experience in the application they are using but this doesn&#8217;t necessarily equate to adding more features.</p>
+
+<p>Adding too many features will limit your ability as a developer/designer/producer to focus on what makes your app unique and interesting. It bogs your code down and makes it difficult to maintain when you want to move things around - even writing tests that have 100% test coverage won&#8217;t save you from the inevitable problem of usability problems.</p>
+
+<p>As a result, even though NoodleApp isn&#8217;t the most perfect web client in the universe, we mindfully listen to what people want in terms of feature requests, look at the current application state and constantly trim and polish accordingly.</p>
+
+<p>If something will make 80% of people happy then it has a higher priority for being implemented - but if it creates a high risk environment of &#8220;we really don&#8217;t know how people will react to this once it goes live&#8221;, it is held off until we cater to more pressing issues (like bug fixes and making the current interface fast, usable and pleasant).</p>
+
+<h2 id='challenge_3_make_it_reasonably_fast'>Challenge #3: Make it reasonably fast</h2>
+
+<p>Web applications that require multiple server connections will not run as fast as your iPhone&#8217;s Todo application, where nothing ever hits an Internet connection and everything is saved locally on the device.</p>
+
+<p>There are a few key things that happen when you load a website or web application:</p>
+
+<ol>
+<li>Your computer checks to see if the other computer (server) is alive</li>
+
+<li>If that server is alive, it needs to make some calls to the API server (in this case, app.net)</li>
+
+<li>The API server returns the request, and then first server has to process that request</li>
+
+<li>The processed request is rendered to the pages you see, using a combination of JavaScript, HTML, CSS</li>
+
+<li>Rinse and repeat</li>
+</ol>
+
+<p>So we have to do our best to make sure the experience isn&#8217;t too slow, we cache appropriate items without having to get into a caching nightmare (did you know caching is hard?) and try not to do too many clever things in JavaScript that can and will slow down your browser. Especially the browser on your Android or iPhone device, which isn&#8217;t doesn&#8217;t have as much power and support as your desktop computer.</p>
+
+<h2 id='challenge_4_make_it_pretty_minimal'>Challenge #4: Make it pretty (minimal)</h2>
+
+<p>Remember all those features that were so tempting to put in but we have to balance them in the fine art of product design? This is where things get complicated and difficult.</p>
+
+<p>There are many features we would like to put in right now (and we even have test branches for trying them out), but the app is not ready to have them implemented. If we were to just throw them in and deploy, there would be many complaints about more bugs to deal with, slowness, strange behaviour - I mean, we already get those bug reports! Imagine if we wanted to be extra masochists and apply more gasoline to the fire!</p>
+
+<p>We would have to add more icons (which generally are a bad thing to use in an interface since nobody knows what anything really is) and the space would get cluttered really fast. So the only solution around that is to add subsections that appear in submenus and let&#8217;s be honest - nobody likes submenus. They just accept it as a necessary evil but I don&#8217;t like accepting sub par solutions. NO SUBMENUS.</p>
+
+<h2 id='current_result'>Current result</h2>
+
+<p>Well, we tried our best (so far!) and this is the latest iteration:</p>
+
+<p><img alt='NoodleApp v2' src='https://dl.dropbox.com/u/1913694/blog/noodleApp-v2.jpg' /></p>
+
+<h2 id='lessons_learned_about_building_an_app_like_this'>Lessons Learned about building an app like this?</h2>
+
+<ol>
+<li>You can&#8217;t please everyone all the time. You can only please some people some of the time.</li>
+
+<li>Do what makes sense for you and your team. You are the ones building it so it should reflect your personalities or else it will feel inauthentic to your audience.</li>
+
+<li>Try, try and try again. And iteration often (but too much change in a short period of time is bad)</li>
+</ol>
+
+<h2 id='thanks_to_the_wonderful_contributors'>Thanks to the wonderful contributors!</h2>
+
+<p>It wasn&#8217;t just me who made NoodleApp! I did get a lot of help (big and small) from various contributors - because this is an <a href='https://github.com/nooodle/noodleapp/blob/master/LICENSE'>open source project under a BSD license</a></p>
+
+<p>Thanks to everyone listed as <a href='https://github.com/nooodle/noodleapp/blob/master/CONTRIBUTORS'>contributors</a> - we couldn&#8217;t have done it without each other!</p>
+
+<h2 id='last_but_not_least_'>Last but not least &#8230;</h2>
+
+<p>Thanks for our supporters that enjoy NoodleApp - your suggestions and feedback helped make it what it is today.</p>
+
+<h2 id='oh_yeah_'>Oh yeah &#8230;</h2>
+
+<p>If you are on app.net you can try out <a href='http://noodleapp.net'>NoodleApp</a> too!</p>
+  </div>
+  <p class="date">October 28, 2012</p>
+</div>
+
+<div class="categories">
+  
+    <span>software,</span>
+  
+    <span>social,</span>
+  
+    <span>javascript,</span>
+  
+    <span>development,</span>
+  
+    <span>open</span>
+  
+    <span>source</span>
+  
+</div>
+
+    </div>
+    <div class="footer">
+      <div class="footer-wrapper">
+        <ul>
+          <li><h2>Projects</h2></li>
+          <li><a href="http://noodleapp.net">NoodleApp (app.net client)</a></li>
+          <li><a href="http://noodletalk.org">Noodle Talk</a></li>
+          <li><a href="http://greatbrain.heroku.com">The Great Brain</a></li>
+          <li><a href="http://thenonsequitur.org">The Non Sequitur</a></li>
+          <li><a href="http://paperweb.me">Paperweb</a></li>
+        </ul>
+        <ul>
+          <li><h2>Code</h2></li>
+          <li><a href="https://github.com/nooodle/noodlemix">NoodleMix</a></li>
+          <li><a href="https://github.com/nooodle/noodlerpg">NoodleRPG</a></li>
+          <li><a href="https://github.com/ednapiranha/specim.in">Specim.in</a></li>
+          <li><a href="https://github.com/ednapiranha/herbie">Herbie</a></li>
+          <li><a href="https://github.com/nooodle/noodletalk">Noodle Talk</a></li>
+          <li><a href="https://github.com/ednapiranha/web_imagery">Web Imagery</a></li>
+          <li><a href="https://github.com/ednapiranha/auto-tagify">Auto Tagify</a></li>
+          <li><a href="https://github.com/ednapiranha/tapechat">Tapechat</a></li>
+        </ul>
+        <ul>
+          <li><h2>Other</h2></li>
+          <li><a href="http://alpha.app.net/ednapiranha">App.net</a></li>
+          <li><a href="http://pinboard.in/u:ednapiranha">Pinboard</a></li>
+          <li><a href="http://twitter.com/ednapiranha"><strike>Twitter</strike></a></li>
+          <li><a href="http://www.mixcloud.com/lazykiki">Podcasts</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
