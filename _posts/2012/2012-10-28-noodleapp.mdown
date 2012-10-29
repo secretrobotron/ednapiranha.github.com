@@ -2,7 +2,7 @@
 title: "NoodleApp"
 layout: default
 categories: software, social, javascript, development, open source
-summary: "It has launched!"
+summary: "I am still on Twitter, I am just choosing to ignore it for as long as I can these days."
 ---
 
 ## Let's just say Twitter is not on my radar (anymore)
