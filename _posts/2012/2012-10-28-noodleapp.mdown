@@ -65,7 +65,7 @@ Well, we tried our best (so far!) and this is the latest iteration:
 
 1. You can't please everyone all the time. You can only please some people some of the time.
 2. Do what makes sense for you and your team. You are the ones building it so it should reflect your personalities or else it will feel inauthentic to your audience.
-2. Try, try and try again. And iteration often (but too much change in a short period of time is bad)
+2. Try, try and try again. And iterate often (but too much change in a short period of time is bad)
 
 ## Thanks to the wonderful contributors!
 

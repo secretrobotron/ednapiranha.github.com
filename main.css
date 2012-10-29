@@ -132,6 +132,8 @@ h1, h2, h3, h4 {
 
 .post-content img {
     margin-bottom: 20px;
+    max-width: 100%;
+    min-width: 190px;
 }
 
 p {
