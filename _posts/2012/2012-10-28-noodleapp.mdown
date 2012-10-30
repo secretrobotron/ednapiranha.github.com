@@ -45,7 +45,7 @@ There are a few key things that happen when you load a website or web applicatio
 4. The processed request is rendered to the pages you see, using a combination of JavaScript, HTML, CSS
 5. Rinse and repeat
 
-So we have to do our best to make sure the experience isn't too slow, we cache appropriate items without having to get into a caching nightmare (did you know caching is hard?) and try not to do too many clever things in JavaScript that can and will slow down your browser. Especially the browser on your Android or iPhone device, which isn't doesn't have as much power and support as your desktop computer.
+So we have to do our best to make sure the experience isn't too slow, we cache appropriate items without having to get into a caching nightmare (did you know caching is hard?) and try not to do too many clever things in JavaScript that can and will slow down your browser. Especially the browser on your Android or iPhone device, which doesn't have as much power and support as your desktop computer.
 
 ## Challenge #4: Make it pretty (minimal)
 
