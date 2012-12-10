@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -49,28 +49,26 @@ table {
 
 
 body {
-    font-family: Arial;
+    font-family: Helvetica, Arial;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 600px;
-    min-width: 290px;
+    min-width: 270px;
     padding: 40px 20px 20px 20px;
     position: relative;
 }
 
 p, li, a, span {
-    color: #666;
-    font-size: 0.87em;
+    color: #333;
+    font-size: 0.97em;
     line-height: 1.35em;
 }
 
 .top-link {
-    background-color: #eee;
     color: #666;
     display: block;
-    font-family: Arial;
     font-size: 0.7em;
     padding: 3px 10px 3px 10px;
     position: absolute;
@@ -79,8 +77,8 @@ p, li, a, span {
 }
 
 .active {
-    background-color: #f00;
-    color: #f1f1f1;
+    background-color: #333;
+    color: #fff;
 }
 
 #about {
@@ -89,15 +87,15 @@ p, li, a, span {
 
 h1, h2, h3, h4 {
     color: #111;
-    font-family: Georgia;
     font-size: 1.9em;
-    line-height: 1.1em;
+    letter-spacing: -0.04em;
+    line-height: 1em;
     margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .title {
-    border-bottom: 2px solid #333;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-bottom: 15px;
 }
 
@@ -111,29 +109,41 @@ h1, h2, h3, h4 {
 
 .home .title {
     border-bottom: 0px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 0px;
+    padding-bottom: 0;
 }
 
 .title a {
     color: #111;
+    padding: 3px 5px 0;
 }
 
 .title a:hover {
-    color: #f00;
+    background-color: #111;
+    color: #eee;
 }
 
 .post-content a {
-    background-color: #dcfe80;
-    color: #555;
+    border-bottom: 1px dashed #24c9e7;
+    color: #222;
     font-size: 1em;
     padding: 0px 3px 0px 3px;
+}
+
+.post-content ul, .post-content ol {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.post-content a:hover {
+    color: #24c9e7;
 }
 
 .post-content img {
     margin-bottom: 20px;
     max-width: 100%;
-    min-width: 190px;
+    min-width: 180px;
 }
 
 p {
@@ -162,7 +172,7 @@ a {
     clear: both;
     display: block;
     float: left;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -178,7 +188,6 @@ a {
 }
 
 .footer ul {
-    border-top: 2px solid #f00;
     display: block;
     float: left;
     margin: 0px;
@@ -186,21 +195,24 @@ a {
 }
 
 .footer li h2 {
-    color: #222;
+    background-color: #c4dc24;
+    color: #fcffeb;
     font-size: 1.4em;
     margin-bottom: 20px;
+    padding: 4px 5px 0 0;
+    text-align: right;
+    width: 100%;
 }
 
 .footer li a {
-    color: #767676;
+    color: #333;
     font-size: 0.9em;
     font-weight: normal;
     padding: 0px 3px 0px 3px;
 }
 
 .footer li a:hover {
-    background-color: #f00;
-    color: #eee;
+    background-color: #d5dee0;
 }
 
 .categories {
@@ -212,10 +224,22 @@ a {
 }
 
 h2 {
-    font-size: 1.8em;
-    margin: 30px 0px 20px 0px;
+    background-color: #25e4f5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #d4fbff;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0 0px 20px 0px;
+    padding: 4px 5px 0 80px;
 }
 
 .pagination ul {
     margin: 0;
+}
+
+@media only screen and (max-width: 360px) and (orientation:portrait) {
+    .footer ul {
+        width: 95%;
+    }
 }

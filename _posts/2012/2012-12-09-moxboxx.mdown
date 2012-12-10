@@ -1,0 +1,28 @@
+---
+title: "Moxboxx"
+layout: default
+categories: software, javascript, development, music
+summary: "So I made a playlist sharing thingy!"
+---
+
+## I am really into music and movies
+
+So I made a playlist sharing service! It's called [Moxboxx](http://moxboxx.com) and it works like this:
+
+
+* You sign in with [Persona](http://persona.org)
+* Your avatar is automatically pulled from [Gravatar](http://gravatar.com) via the email you used in Persona
+* You create a playlist and add optional tags and/or upload an optional background image
+* You paste in a Youtube, Vimeo or Soundcloud URL
+* Then you share your amazing playlist to your friends!
+* Rinse and repeat.
+
+It's a pretty fun project to hack on and is in constant development as more things are added and removed via testing and feedback.
+
+It appears to work well in the context of building temporal playlists that are thematic - for example, creating a playlist to dedicate to a friend or creating one in celebration of the weekend.
+
+There are a couple of playlists relating to music to listen to while coding such as [Only Built 4 Coding Lisp](http://moxboxx.com/playlist/33), [Coding With Your Head in the Clouds](http://moxboxx.com/playlist/43) and [Crazy Coding Influences](http://moxboxx.com/playlist/45).
+
+There are also weird ones that display the [extreme bizarre world of Maury Povich](http://moxboxx.com/playlist/68) and introduce you to the world of [Japanese commercials in a loop](http://moxboxx.com/playlist/53).
+
+If this is your cup of tea, you should try it out and send someone an end-of-year holiday playlist for fun - maybe nyan cat intermixed with videos of Bladerunner and a repeating background of ceiling cat.

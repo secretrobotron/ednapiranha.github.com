@@ -6,6 +6,13 @@
     <link>http://ednapiranha.com</link>
     
       <item>
+        <title>Moxboxx</title>
+        <description>So I made a playlist sharing thingy!</description>
+        <published>2012-12-09 00:00:00 -0500</published>
+        <link>http://ednapiranha.com/2012/moxboxx/</link>
+      </item>
+    
+      <item>
         <title>NoodleApp</title>
         <description>I am still on Twitter, I am just choosing to ignore it for as long as I can these days.</description>
         <published>2012-10-28 00:00:00 -0400</published>
@@ -17,13 +24,6 @@
         <description>It has launched!</description>
         <published>2012-08-12 00:00:00 -0400</published>
         <link>http://ednapiranha.com/2012/noodlerpg-is-in-the-public/</link>
-      </item>
-    
-      <item>
-        <title>An RPG of Noodle Portions</title>
-        <description>So I decided to start working on a cheapie web RPG again.</description>
-        <published>2012-07-26 00:00:00 -0400</published>
-        <link>http://ednapiranha.com/2012/an-rpg-of-noodle-portions/</link>
       </item>
     
   </channel>
